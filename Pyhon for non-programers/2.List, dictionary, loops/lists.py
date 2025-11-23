@@ -10,6 +10,8 @@ print(fav_movies)
 
 del(fav_movies[2])
 
+
+
 print(fav_movies)
 
 

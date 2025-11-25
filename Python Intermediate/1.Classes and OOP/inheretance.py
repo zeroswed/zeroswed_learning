@@ -27,4 +27,10 @@ class Bulldog(Dog):
         super().__init__(name)
         print("Bulldog is created")
 
-dog1 = Bulldog('Fido')
+class Bulldog_Terrier(Bulldog):
+    
+    def __init__(self, name):
+        super().__init__(name)
+        print("Bulldog Terrier is created")
+
+dog1 = Bulldog_Terrier('Fido')

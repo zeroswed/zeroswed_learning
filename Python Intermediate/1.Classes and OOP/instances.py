@@ -1,16 +1,21 @@
 import random
 
-class Dog:
+
+
+class Dog():
     info = "Dog is a mens' best friend"
 
-    def __init__(self, name='Rex', age=2):
-#        print('I am alive!')
-#        print(random.randint(54, 68))
+    def __init__(self, name):
+        print('A dog is created!')
+        self.lucky_number = random.randint(1,10)
         self.name = name
-        self.age = age
         
 
+    def bark(self):
+        return (f"Woof! My nam is {self.name} and my number is {self.lucky_number}")
 
-Dog1 = Dog('Brent', 4)
-print(Dog1.name,'and he is', Dog1.age)
+dog1 = Dog('Fido')
+
+        
+
 

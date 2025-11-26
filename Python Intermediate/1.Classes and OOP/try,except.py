@@ -20,6 +20,17 @@ def upper_fun(word):
     return word.upper()
     
 
-print(upper_fun(''))
+#print(upper_fun('qwer'))
 
 print('after')
+
+class Snotty_error(Exception):
+    print('This is a snotty error!')    
+
+def bogus(x):
+    try:
+        x = int('hello')
+        return x
+    except:
+        raise Snotty_error()
+bogus('1')

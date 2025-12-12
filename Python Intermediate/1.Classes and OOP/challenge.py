@@ -8,7 +8,7 @@ class Student:
             self.count += 1
         return sum(self.scores) / self.count
 
-print(Student().average_score())
+print(int(Student().average_score()))
   
 
 
